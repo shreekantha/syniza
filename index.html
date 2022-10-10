@@ -20,32 +20,45 @@
             vertical-align: middle;
             height: 50vh;
         }
-
         .bg {
             background: #981a97;
             color: white;
             height: 50vh;
             text-align: center;
-            display: flex;
+            /* display: flex; */
             align-items: center;
             align-content: center;
-        }
-
-        .comming-soon {
-            font-size: 5em;
             width: 100%;
         }
+        .comming-soon {
+            font-size: 5em;
+            /* width: 100%; */
+        }
+       
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+}
     </style>
 </head>
 
 <body>
     <main class="main">
 
-        <img class="mx-auto" src="./assets/images/syniza.png" alt="SYNIZA" srcset="" />
+        <img class="mx-auto img-responsive responsive" src="./assets/images/syniza.png" alt="SYNIZA" srcset="" />
     </main>
-    <div class="bg">
-        <div class="comming-soon">Comming Soon...!</div>
+    <div class="container-fluid bg">
+        <div class="row">
+
+            <div class="comming-soon col-md-12">Comming Soon..!</div>
+        </div>
     </div>
+    <!-- <div class="bg content-fluid row">
+    </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
